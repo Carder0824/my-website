@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - Log In or Sign Up</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif; }
+        .facebook-logo { color: #1877f2; font-size: 3.5rem; font-weight: 800; }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <div class="min-h-screen flex items-center justify-center px-4">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+
+            <!-- Left Side -->
+            <div class="text-center md:text-left">
+                <h1 class="facebook-logo text-6xl mb-4">facebook</h1>
+                <p class="text-3xl text-gray-700 max-w-md">
+                    Facebook helps you connect and share with the people in your life.
+                </p>
+            </div>
+
+            <!-- Right Side: Login Form -->
+            <div class="max-w-md mx-auto w-full">
+                <div class="bg-white rounded-2xl shadow-xl p-8 border border-gray-200">
+                    
+                    <form class="space-y-5">
+                        <input type="text" placeholder="Email address or phone number" 
+                               class="w-full px-4 py-4 border border-gray-300 rounded-xl focus:outline-none focus:border-blue-500 text-lg">
+                        
+                        <input type="password" placeholder="Password" 
+                               class="w-full px-4 py-4 border border-gray-300 rounded-xl focus:outline-none focus:border-blue-500 text-lg">
+                        
+                        <button type="submit"
+                                class="w-full bg-[#1877f2] hover:bg-blue-700 text-white font-bold py-4 rounded-xl text-xl transition">
+                            Log in
+                        </button>
+                    </form>
+
+                    <div class="text-center my-5">
+                        <a href="#" class="text-blue-600 hover:underline">Forgotten password?</a>
+                    </div>
+
+                    <hr class="my-6">
+
+                    <!-- Create Account -->
+                    <div class="text-center">
+                        <button onclick="alert('Create new account clicked!')"
+                                class="bg-[#42b72a] hover:bg-green-600 text-white font-bold text-xl px-8 py-4 rounded-xl">
+                            Create new account
+                        </button>
+                    </div>
+                </div>
+
+                <!-- App Promo -->
+                <p class="text-center mt-8 text-gray-600">
+                    <strong>Get Facebook for Android or iOS</strong>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white py-10 text-center text-sm text-gray-500 border-t">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-6">
+                <a href="#" class="hover:underline">English (UK)</a>
+                <a href="#" class="hover:underline">Français (FR)</a>
+                <a href="#" class="hover:underline">Español</a>
+                <a href="#" class="hover:underline">Português (BR)</a>
+            </div>
+            <div class="flex flex-wrap justify-center gap-x-6 text-xs">
+                <a href="#" class="hover:underline">About</a>
+                <a href="#" class="hover:underline">Help</a>
+                <a href="#" class="hover:underline">Privacy</a>
+                <a href="#" class="hover:underline">Terms</a>
+                <a href="#" class="hover:underline">Advertising</a>
+                <a href="#" class="hover:underline">Meta © 2026</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
